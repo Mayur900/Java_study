@@ -7,5 +7,6 @@ public class ArrayListTest {
 		System.out.println();
 		System.out.println("Abhay");
 		System.out.println("Garhwal");
+		System.out.println("nandini");
 	}
 }
