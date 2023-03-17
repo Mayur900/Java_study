@@ -12,6 +12,8 @@ public class ArrayListTest {
 		
 		for (int i = 0; i < args.length; i++) {
 			System.out.println(i);
+			
+			System.out.println("mayur");
 		}
 	}
 }
