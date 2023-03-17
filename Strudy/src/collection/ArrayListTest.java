@@ -1,4 +1,4 @@
-package mayur_study.collection;
+package collection;
 
 public class ArrayListTest {
 
