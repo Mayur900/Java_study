@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="NewProgram/" kind="src" path="Strudy/mayur_program"/>
+	<classpathentry kind="src" path="Strudy/mayur_program/NewProgram"/>
+	<classpathentry kind="src" path="Strudy/src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
