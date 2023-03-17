@@ -8,5 +8,6 @@ public class ArrayListTest {
 		System.out.println("Abhay");
 		System.out.println("Garhwal");
 		System.out.println("nandini");
+		System.out.println("nandini1");
 	}
 }
