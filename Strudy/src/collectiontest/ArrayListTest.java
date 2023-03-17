@@ -9,5 +9,9 @@ public class ArrayListTest {
 		System.out.println("Garhwal");
 		System.out.println("nandini");
 		System.out.println("nandini1");
+		
+		for (int i = 0; i < args.length; i++) {
+			System.out.println(i);
+		}
 	}
 }
