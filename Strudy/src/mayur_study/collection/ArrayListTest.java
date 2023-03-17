@@ -1,4 +1,4 @@
-package sturdy.collection;
+package mayur_study.collection;
 
 public class ArrayListTest {
 
