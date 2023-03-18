@@ -31,7 +31,7 @@ public class HashSetTest {
 		
 //		hs.forEach(s -> System.out.print(s + " "));
 		
-		hs.
+		
 		//System.out.println(hs);
 		
 	}
