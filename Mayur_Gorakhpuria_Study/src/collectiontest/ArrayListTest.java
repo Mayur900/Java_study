@@ -10,7 +10,7 @@ public class ArrayListTest {
 	//	ArrayList<String> list = new ArrayList<>();;
 		
 		
-		String str = "The Collection in Java is a framework that provides an architecture to store and manipulate the group of objects.";
+		String str = "The Collection in Java is a framework c provides an architecture to store and manipulate the group of objects.";
 		
 		String word[] = str.split("\\s");
 		
@@ -23,6 +23,16 @@ public class ArrayListTest {
 
 		
 		System.out.println(list);
+		
+		
+		// String list store
+		// Java replace " poaton"
+		// remove that word
+		// the <--> position  <-->.objects
+		// size of list
+		// string print without ,,
+		
+		
 		
 
 	}
