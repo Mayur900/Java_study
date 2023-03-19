@@ -28,7 +28,6 @@ public class HashSetTest {
 		
 		hs.addAll(hs1);
 		hs.addAll(list2);
-		
 //		hs.forEach(s -> System.out.print(s + " "));
 		
 		

@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\Mayur Gorakhpuria\Documents\GitHub\Java_study\Mayur_Gorakhpuria_Study\.metadata\.plugins\org.eclipse.jdt.core
+3910465337.index
+1865797976.index
+507388051.index
