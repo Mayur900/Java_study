@@ -1,4 +1,4 @@
-package string_test;
+package logicalProgram;
 
 import java.util.Arrays;
 
