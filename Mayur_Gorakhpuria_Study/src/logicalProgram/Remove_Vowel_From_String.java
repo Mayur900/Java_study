@@ -1,9 +1,6 @@
 package logicalProgram;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
 
 public class Remove_Vowel_From_String {
 	public static void main(String[] args) {
