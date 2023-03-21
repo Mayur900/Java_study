@@ -1,9 +1,5 @@
 package opration;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Set;
-
 public interface OprationIinterface {
 	
 	void printIntId(Model m);
