@@ -3,48 +3,26 @@ package string_test;
 public class StringTest {
 	public static void main(String[] args) {
 
-
-		String str = "The Collection in Java is a framework c provides an architecture to store and manipulate the group of objects.";
-
-		String s = "abc";
-
-		String s1 = new String("abc");
-
-		String s2 = new String("abc");
+		String num = "900900";
+		int i = Integer.parseInt(num);
+		System.out.println(i);
 		
-		String s3 = s2;
-
+		float f =  Float.parseFloat(num);
+		System.out.println(f);
 		
-//		System.out.println(s == s1);
-//		System.out.println(s1 == s2);
+		int k = 909090;
+		String s = String.valueOf(k);
+		System.out.println(s);
 		
-//		System.out.println(s2 == s3);
+		double d = Double.parseDouble(num);
+		System.out.println(d);
 		
-//		System.out.println(s.equals(s1));
+		char ch = '!';
 		
-//		System.out.println(s1.equals(s2));
-		
-//		System.out.println(s2.equals(s3));
-		
-
-//		System.out.println(s.charAt(2));
-		
-//		System.out.println(s);
-
-//		s = s.concat("xyx");
-		
-//		System.out.println(s);
-		
-//		System.out.println(str.contains("itec"));
+		int e = ch;
+		System.out.println(e);
 		
 		
-//		System.out.println(Arrays.toString(s.getBytes()));
-		
-//		System.out.println(str.substring(14));
-		
-//		System.out.println(str.substring(6, 13));
-		
-			
 	}
 
 }
