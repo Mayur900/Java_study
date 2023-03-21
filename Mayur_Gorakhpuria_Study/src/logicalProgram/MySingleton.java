@@ -1,5 +1,5 @@
 
-package fortesting;
+package logicalProgram;
 
 public class MySingleton {
 	private static MySingleton myObj = new MySingleton();
