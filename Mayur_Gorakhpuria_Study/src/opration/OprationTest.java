@@ -1,7 +1,5 @@
 package opration;
 
-import java.util.Arrays;
-
 public class OprationTest implements OprationIinterface {
 
 	@Override
@@ -62,6 +60,12 @@ public class OprationTest implements OprationIinterface {
 	public void prinMap(Model m) {
 		System.out.println("Model Map " + m.getMap());
 
+	}
+
+	@Override
+	public void printIntId(int m) {
+		System.out.println("Model int " + m);
+		
 	}
 
 }

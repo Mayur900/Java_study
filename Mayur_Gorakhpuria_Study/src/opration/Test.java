@@ -46,6 +46,7 @@ public class Test {
 		oi.printList(m);
 		oi.prinSet(m);
 		oi.prinMap(m);
+		oi.printIntId(m.getIntId());
 
 	}
 }

@@ -12,5 +12,7 @@ public interface OprationIinterface {
 	void prinSet(Model m);
 	void prinMap(Model m);
 
+	void printIntId(int m);
+
 
 }
