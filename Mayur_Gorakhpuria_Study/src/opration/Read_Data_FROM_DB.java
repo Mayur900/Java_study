@@ -16,7 +16,7 @@ public class Read_Data_FROM_DB {
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student?characterEncoding=utf8", "root", "root");
 		} catch (Exception e) {
-			e.printStackTrace();
+			System.out.println(e);
 		}
 
 		PreparedStatement pr = con.prepareStatement("Select * from student_data");

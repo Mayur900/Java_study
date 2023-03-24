@@ -10,7 +10,7 @@ public class EmployeeCrudOpration {
 
 		//readData(em);
 		//readDataById(em);
-		//insertData(em);
+		insertData(em);
 
 	}
 
