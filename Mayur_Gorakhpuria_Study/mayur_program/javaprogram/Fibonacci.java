@@ -13,7 +13,7 @@ public static void main(String[] args)
 	for(int i=0;i<=n;i++)
 	{
 		f3=f1+f2;
-		System.out.println(f3);
+		System.out.print(f3 + " ");
 		f1=f2;
 		f2=f3;
 	}

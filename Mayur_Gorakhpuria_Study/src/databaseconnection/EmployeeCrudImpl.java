@@ -1,18 +1,18 @@
 package databaseconnection;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EmployeeCrudImpl implements EmployeeCrud {
-	Connection con = DbConnection.getConnection();
+public class EmployeeCrudImpl {
+	Connection con = getConnection();
 
-	@Override
 	public List<EmployeeDTO> readAllEmployee() {
 		List<EmployeeDTO> list = new ArrayList<>();
-		
+
 		try {
 			PreparedStatement pr = con.prepareStatement("Select * from employees");
 			ResultSet rs = pr.executeQuery();
@@ -31,7 +31,6 @@ public class EmployeeCrudImpl implements EmployeeCrud {
 		return list;
 	}
 
-	@Override
 	public EmployeeDTO readEmployeeById(int id) {
 		try {
 			PreparedStatement pr = con.prepareStatement("select * from employees where id = ?");
@@ -52,7 +51,6 @@ public class EmployeeCrudImpl implements EmployeeCrud {
 		return null;
 	}
 
-	@Override
 	public int createEmployee(EmployeeDTO empDto) {
 		int updateRecord = 0;
 		try {
@@ -63,22 +61,32 @@ public class EmployeeCrudImpl implements EmployeeCrud {
 			ps.setString(4, empDto.getLastName());
 			ps.setString(5, empDto.getAddress());
 			updateRecord = ps.executeUpdate();
-		}catch (Exception e) {
+		} catch (Exception e) {
 			System.out.println(e);
 		}
 		return updateRecord;
 	}
 
-	@Override
 	public boolean updateEmployee(EmployeeDTO empDto) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
 	public boolean deleteEmployee(int id) {
 		// TODO Auto-generated method stub
 		return false;
+	}
+
+	public Connection getConnection() {
+		Connection con = null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee_database?characterEncoding=utf8",
+					"root", "root");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return con;
 	}
 
 }

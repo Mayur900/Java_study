@@ -7,7 +7,15 @@ public class EmployeeDTO {
 	private String firstName;
 	private String lastName;
 	private String address;
+	private String babyName;
 	
+	
+	public String getBabyName() {
+		return babyName;
+	}
+	public void setBabyName(String babyName) {
+		this.babyName = babyName;
+	}
 	public int getId() {
 		return id;
 	}

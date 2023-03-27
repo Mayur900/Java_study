@@ -1,12 +1,11 @@
 package student_db_connection;
 
-import java.sql.SQLException;
 import java.util.List;
 
 
 public interface StudentInterface {
 
-	public List<Student> readAllStudent() throws SQLException;
+	public List<Student> readAllStudent();
 	
 	public Student readStudentById(int id);
 

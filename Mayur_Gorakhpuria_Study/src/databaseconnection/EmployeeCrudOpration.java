@@ -1,22 +1,23 @@
 package databaseconnection;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeCrudOpration {
 
 	public static void main(String[] args) {
 
-		EmployeeCrud em = new EmployeeCrudImpl();
+		EmployeeCrudImpl em = new EmployeeCrudImpl();
 
-		//readData(em);
+		readData(em);
 		//readDataById(em);
-		insertData(em);
+		//insertData(em);
 
 	}
 
 
 
-	private static void insertData(EmployeeCrud em) {
+	private static void insertData(EmployeeCrudImpl em) {
 		EmployeeDTO emDto = new EmployeeDTO();
 		emDto.setId(6);
 		emDto.setFirstName("Vanshika");
@@ -35,7 +36,7 @@ public class EmployeeCrudOpration {
 
 
 
-	private static void readDataById(EmployeeCrud em) {
+	private static void readDataById(EmployeeCrudImpl em) {
 		EmployeeDTO ep =  em.readEmployeeById(4);
 		System.out.println(ep);
 	}
@@ -44,8 +45,9 @@ public class EmployeeCrudOpration {
 	
 	
 	
-	private static void readData(EmployeeCrud em) {
-		List<EmployeeDTO> empList = em.readAllEmployee();
+	private static void readData(EmployeeCrudImpl em) {
+		List<EmployeeDTO> empList = new ArrayList<>();
+		//List<EmployeeDTO> empList = em.readAllEmployee();
 
 		for (EmployeeDTO emDto : empList) {
 			System.out.println(emDto);
