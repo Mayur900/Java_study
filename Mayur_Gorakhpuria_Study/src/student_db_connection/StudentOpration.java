@@ -5,17 +5,11 @@ import java.util.List;
 public class StudentOpration {
 	public static void main(String[] args) {
 
-//		read();
+		read();
 //		reayById();
 //		insrt();
 //		update();
-		StudentInterfaceImpl st = new StudentInterfaceImpl();
-		boolean bol = st.deleteStudent(7);
-		if(bol) {
-			System.out.println("Record delete");
-		}else {
-			System.out.println("Record not delete"); 
-		}
+		
 		
 		
 	}
@@ -53,7 +47,7 @@ public class StudentOpration {
 
 	private static void reayById() {
 		StudentInterfaceImpl s = new StudentInterfaceImpl();
-		Student student = s.readStudentById(1);
+		Student student = s.readStudentById(3);
 		System.out.println(student);
 	}
 
