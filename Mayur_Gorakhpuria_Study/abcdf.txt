@@ -1,0 +1,24 @@
+create pojo/DTO class
+add all the variable type and geeter/setter
+interfacae : print // listPrint// setprint// haspamprint//arryPrint
+operation class
+set all the type inside pojo..
+call all the repsective method to print the value
+create pojo/DTO class
+add all the variable type and geeter/setter
+interfacae : print // listPrint// setprint// haspamprint//arryPrint
+operation class
+set all the type inside pojo..
+call all the repsective method to print the value
+create pojo/DTO class
+add all the variable type and geeter/setter
+interfacae : print // listPrint// setprint// haspamprint//arryPrint
+operation class
+set all the type inside pojo..
+call all the repsective method to print the value
+create pojo/DTO class
+add all the variable type and geeter/setter
+interfacae : print // listPrint// setprint// haspamprint//arryPrint
+operation class
+set all the type inside pojo..
+call all the repsective method to print the value

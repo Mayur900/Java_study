@@ -24,6 +24,7 @@ public class Read_Data_From_File {
 
 		} finally {
 			br.close();
+			fr.close();
 		}
 
 	}
