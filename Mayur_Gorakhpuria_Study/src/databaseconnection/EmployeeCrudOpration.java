@@ -46,8 +46,8 @@ public class EmployeeCrudOpration {
 	
 	
 	private static void readData(EmployeeCrudImpl em) {
-		List<EmployeeDTO> empList = new ArrayList<>();
-		//List<EmployeeDTO> empList = em.readAllEmployee();
+		//List<EmployeeDTO> empList = new ArrayList<>();
+		List<EmployeeDTO> empList = em.readAllEmployee();
 
 		for (EmployeeDTO emDto : empList) {
 			System.out.println(emDto);

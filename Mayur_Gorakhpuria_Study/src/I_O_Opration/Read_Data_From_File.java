@@ -8,10 +8,8 @@ public class Read_Data_From_File {
 
 	public static void main(String[] args) throws IOException {
 
-		FileReader fr = null;
 		BufferedReader br = null;
-		try {
-			fr = new FileReader("D://Log//ab.txt");
+		try(FileReader fr = new FileReader("D://Log//ab.txt")) {
 			br = new BufferedReader(fr);
 			String line = "";
 
@@ -24,7 +22,6 @@ public class Read_Data_From_File {
 
 		} finally {
 			br.close();
-			fr.close();
 		}
 
 	}

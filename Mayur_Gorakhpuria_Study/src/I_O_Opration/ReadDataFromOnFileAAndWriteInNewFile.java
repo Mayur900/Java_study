@@ -13,6 +13,8 @@ public class ReadDataFromOnFileAAndWriteInNewFile {
 	public static void main(String[] args) throws IOException {
 
 		ArrayList<String> list = readFile();
+		
+		
 		if(list != null && list.size() > 0) {
 			writeFile(list);
 			System.out.println("Done");
@@ -25,7 +27,7 @@ public class ReadDataFromOnFileAAndWriteInNewFile {
 
 	private static void writeFile(ArrayList<String> list) {
 		try {
-			FileWriter fw = new FileWriter("abcdf.txt",true);
+			FileWriter fw = new FileWriter("abcdfs.txt",true);
 			BufferedWriter bw = new BufferedWriter(fw);
 			for (String str : list) {
 				if (str != null) {

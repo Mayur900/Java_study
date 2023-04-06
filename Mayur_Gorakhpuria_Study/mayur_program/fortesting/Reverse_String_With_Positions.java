@@ -3,7 +3,7 @@ package fortesting;
 public class Reverse_String_With_Positions {
 
     public static void main(String[] main) {
-        String s = "I Am Not String"; //output:- g ni rtS toNmAI
+        String s = "I Am Abhay Garhwal Student Of Ips Accedmey"; //output:- g ni rtS toNmAI
         String k = s.replaceAll("\\s", "");
         char allchar[] = k.toCharArray();
         char allwithspace[] = s.toCharArray();

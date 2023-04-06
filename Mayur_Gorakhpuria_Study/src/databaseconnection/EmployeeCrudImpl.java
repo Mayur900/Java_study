@@ -14,7 +14,7 @@ public class EmployeeCrudImpl {
 		List<EmployeeDTO> list = new ArrayList<>();
 
 		try {
-			PreparedStatement pr = con.prepareStatement("Select * from employees");
+			PreparedStatement pr = con.prepareStatement("Select * from student");
 			ResultSet rs = pr.executeQuery();
 			while (rs.next()) {
 				EmployeeDTO e = new EmployeeDTO();
@@ -81,7 +81,7 @@ public class EmployeeCrudImpl {
 		Connection con = null;
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/employee_database?characterEncoding=utf8",
+			con = DriverManager.getConnection("jdbc:mysql://192.168.29.136:3306/student_data?characterEncoding=utf8",
 					"root", "root");
 		} catch (Exception e) {
 			e.printStackTrace();
