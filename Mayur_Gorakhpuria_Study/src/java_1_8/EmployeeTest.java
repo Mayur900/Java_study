@@ -3,15 +3,53 @@ package java_1_8;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class EmployeeTest {
 
 	public static void main(String[] args) {
 
 		List<Employee> list = getEmployee();
+		
+		//List<String> list1 = list.stream().map(Employee :: getName).toList();
+		//List<String> list1 = list.stream().map(e -> e.getName()).toList();
+	
+		//List<String> list1 = list.stream().filter(e -> e.getName().startsWith("J")).map(s -> s.getName()).toList();
+		
+//		List<Employee> list1 = list.stream().filter(e -> e.getGender().equals("Male")).filter(e -> e.getSalary() > 25000).toList();
+		
+		/**
+		list1.forEach(System.out :: println);
+		
+		list1.forEach(e -> System.out.println(e));
+		
+		list1.forEach(e -> {
+			System.out.println(e);
+		});
+		
+		
+		for(Employee e : list1) {
+			System.out.println(e);
+		}
+		
+		
+		for(int i= 0; i< list1.size(); i++) {
+			Employee e = list1.get(i);
+			System.out.println(e);
+		}
+		
+		**/
+		
+//		List<String> list1 =  list.stream().map(Employee :: getDepartment).distinct().toList();
+		
+//		long list1 =  list.stream().map(Employee :: getDepartment).distinct().count();
+//		System.out.println(list1);
+		
+//		long i = list.stream().filter(e -> e.getGender().equals("Male")).count();
+//		System.out.println(i);
 
-		//Map<String, Long> listMap = list.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
-		//System.out.println(listMap);
+//		Map<String, Long> listMap = list.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
+//		System.out.println(listMap);
 		
 		//List<String> depList = list.stream().map(Employee :: getDepartment).distinct().toList();
 		//System.out.println(depList);
@@ -21,8 +59,8 @@ public class EmployeeTest {
 		//System.out.println(kd);
 		
 		
-	//	String name = list.stream().collect(Collectors.maxBy(Comparator.comparingDouble(Employee :: getSalary))).get().name;
-		//System.out.println(name);
+		String name = list.stream().collect(Collectors.maxBy(Comparator.comparingDouble(Employee :: getSalary))).get().name;
+		System.out.println(name);
 		
 		
 //		List<String> nameList = list.stream().filter(s -> s.getYearOfJoining() > 2015).map(Employee :: getName).toList();
@@ -34,8 +72,8 @@ public class EmployeeTest {
 //		Map<String, Double> kd = list.stream().collect(Collectors.groupingBy(Employee :: getDepartment, Collectors.averagingDouble(Employee :: getSalary)));
 //		System.out.println(kd);
 	
-		Employee e = list.stream().filter(s -> s.getDepartment().endsWith("Product Development") && s.getGender().endsWith("Male")).min(Comparator.comparing(Employee :: getAge)).get();
-		System.out.println(e);
+//		Employee e = list.stream().filter(s -> s.getDepartment().endsWith("Product Development") && s.getGender().endsWith("Male")).min(Comparator.comparing(Employee :: getAge)).get();
+//		System.out.println(e);
 		
 	}
 
